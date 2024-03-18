@@ -1,0 +1,130 @@
+#profile {
+  overflow: hidden;
+  /* width: 100vw; */
+  width: 400px;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.profileTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.profileDesc {
+  font-weight: 400;
+  font-size: 4rem;
+  max-width: 51rem;
+  margin: 0 2rem;
+}
+
+.profileBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+  
+}
+
+.profileBar {
+  /* display: flex; */
+ flex-direction: row;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(252, 252, 252);
+}
+
+.profileBarImg {
+  object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 30px;
+  margin-right: 2rem;
+  border-radius:  50px;
+  border: 2px solid red;
+}
+
+.profileBarText {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.desktopMenuBtn {
+  display: flex;
+  height: 3rem;
+  width: 8rem;
+  margin-left: 30%;
+  align-items: center;
+  background: white;
+  color: black;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  background-color: rgb(164, 107, 174);
+  color: burlywood;
+}
+.desktopMenuBtn:hover{
+  transform: scale(1.2);
+  color: burlywood;
+}
+.submitBtn {
+  background: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+}
+body {
+  background: rgb(30, 30, 30);
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+h2{
+  color: red;
+  
+}
+p{
+  height: auto;
+  justify-items: center;
+  display: block;
+  border: 2px solid black ;
+  color: blueviolet;
+  /* height: 50px; */
+  border-radius: 7px;
+  font-size: larger;
+  justify-content: center;
+  
+}
+@media screen and (max-width: 720px) {
+  .profileBarText > P {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileBarText > P {
+    font-size: 3vw;
+  }
+  .profileBarImg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  .profileBarText > h2 {
+    font-size: 5vw;
+    color: brown;
+  }
+}
+
